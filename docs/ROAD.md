@@ -18,6 +18,8 @@
 
 三线内容于 2026-09-08 定稿（世界线 / 交通体系线 / 生物线），全部为 p 轨条目；实施顺序与子项细化随开发推进确认，未收敛的设计点明示「待细化」，不虚构占位。 / The three content lines were finalized on 2026-09-08 (world / transport / fauna); all are p-track items; order and sub-items are refined as development proceeds; unconverged designs stay marked "to be refined" and nothing is invented.
 
+* **藏录 / Ledger（通用内容登记册，Subterra 实现；2026-09-08 定）**：「贤者册」抽象**重命名通用化**，作 Subterra 框架能力落地——可注册 新领域 / 结晶世界观 / 镜像层 / 遗物条目 等世界内容，td 驱动 + API 双接口；**Toterra 消费 Sub 实现**，「贤者册」仅为其在主世界观语境的 diegetic 面貌；世界观注册契约语义仍由 Toterra 定义（前定），持久化与登记复用 Subterra Ledger。 / The "sage registry" abstraction is generalized and renamed the Ledger, implemented in Subterra (a generic content registry: new realms / crystallized worldviews / mirror layers / artifact entries; td + API); Toterra consumes it; the sage registry is only its diegetic face in the Main worldview; worldview-contract semantics stay in Toterra.
+
 ### Worldview Retention / 世界观保留清单（2026-09-08 定）
 
 * 四块保留沿用（用户拍板）；清单外内容随拟真重写或待定。 / Four pillars retained (user decision); unlisted content is rewritten or pending.
@@ -141,6 +143,13 @@
 | 战技 Warfare | 世界观·灾厄 | 武备与征战防卫 |
 | 交通 Wayfare | 交通线 | 三语族统一领域（硬路 / 冰道 / 轨道三支） |
 
+#### Realm invention / 研究新领域（2026-09-08 定）
+
+* 玩家可研究并**创立新领域**——第一批 12 不是封闭清单（玩家成为领域作者，与自建世界观同一作者位）。 / Players can research and establish brand-new realms; the first 12 are not a closed list.
+* 成型 = **纯涌现自持名**：长期打磨一套不属于任何现有领域的技艺（驯龙 / 自创法门），重复实践使其自然凝成雏形并**自持其名**；无贤者仪式、无捏造菜单（diegetic）。 / Emergence + self-naming: prolonged novel practice crystallizes a new realm with its own name; no ritual, no menu.
+* 去向 = **可共享注册**：新领域写入通用「藏录 / Ledger」（Subterra 实现），跨存档 / 多人可引用、可被探索。 / Shareable: new realms register into the Ledger (Subterra), cross-save and multiplayer.
+* 代价：创立需领域成长累积 + 相关领域交叉（科研重投入），成长曲线同法则。 / Cost: deep investment and cross-realm intersections; same growth law.
+
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
 | p.2.0 | Realm growth trees / 领域成长树：realm id + 层级投入曲线 + 配方（td schema），事件流 → 成长 | planned / 已立项 |
@@ -190,3 +199,5 @@
 * 2026-09-08 — 隐型技术线定案（p.2.3–2.4）：零技术知识直觉开局；获得 = 遗迹遗物逆向 / 文明学习 / 实践领悟；学得后创新推进；技术为横向底座按领域限深度；无科技树 UI 与研发队列。 / Tech line decided: intuition-first zero-knowledge start; acquisition via ruins reverse-engineering, civilization learning, practice; innovation after learning; horizontal base gated by realms; no tech-tree UI.
 * 2026-09-08 — 逆向拆解机制细化：五步闭环（检视→拆解→试作→复现→超越）、领悟四层（辨认→复刻→改良→超越）；拆坏信息缺损由同类遗物补全；知识永久保留；拆卸台方块 + 耗损工具；全流程进事件流。 / Reverse-engineering mechanic detailed: five-step loop, four comprehension tiers, same-kind artifact completion, permanent knowledge, disassembly bench.
 * 2026-09-08 — 领域清单第一批 12 定：地质 / 农垦 / 博物 / 冶金 / 工匠 / 草药 / 奥术 / 考古 / 天文 / 商道 / 战技 / 交通（td 可扩展）。 / First-batch realm catalog (12) decided; extendable via contract.
+* 2026-09-08 — 研究新领域定案：第一批 12 非封闭清单；纯涌现自持名（实践凝成新领域，无贤者仪式）；可共享注册（写入通用「藏录」跨存档 / 多人引用）；玩家成领域作者。 / Realm invention decided: emergence + self-naming; shareable via the Ledger; players become realm authors.
+* 2026-09-08 — 「贤者册」通用化定案：重命名为「藏录 / Ledger」，Subterra 实现（新领域 / 结晶世界观 / 镜像层 / 遗物条目通用登记，td + API 双接口）；Toterra 消费 sub，贤者册仅为其 diegetic 面貌；世界观契约语义仍在 Toterra。 / Sage-registry generalized as the Ledger, implemented in Subterra; Toterra consumes it; contract semantics stay in Toterra.
