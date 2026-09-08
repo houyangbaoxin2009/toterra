@@ -122,6 +122,25 @@
 * **贤者之路（全能者的顶点）**：跨领域成长累积达「神话」阈值后，玩家可选**成贤**——成为宇宙学的观察者 / 记录者（读全部碑文、立卷之权、可自拟世界观规则），亦可继续作凡人玩家；贤者不是 NPC 专属，是玩家的终极人生选项，与「贤者立卷」机制闭环。 / Sage path: at mythic breadth the player may become a sage — the cosmology's observer / recorder; sages are not NPC-exclusive; the player's ultimate life choice, closing the loop with the sage-chronicle mechanic.
 * 存档与性能：领域成长档案 = 行为事件流累积（td/zd），零全局模拟、零热路径开销。 / Save-side deterministic ledger; no global simulation or hot-path cost.
 
+#### Realm catalog / 领域清单（第一批 12，2026-09-08 定）
+
+* 内置第一批 12 领域，覆盖全部内容线；领域可经注册契约（td 声明）扩展，第三方可增补。 / First batch of 12 realms covering all content lines; realms are extendable via the contract.
+
+| Realm / 领域 | Line / 对应线 | Note / 说明 |
+| --- | --- | --- |
+| 地质 Geology | 世界线 | 矿脉 / 地层 / 勘探（B 档拟真成矿） |
+| 农垦 Farming | 生存基盘 | 耕作与作物（B 档） |
+| 博物 Naturalism | 生物线 | 识别 / 驯养三维度 / 生态知识 |
+| 冶金 Metallurgy | 科技线 | 提炼与合金（接母岩成矿） |
+| 工匠 Mechanism | 科技线 | 机巧 / 装配 / 逆向试作 |
+| 草药 Herbalism | 世界观·女巫 | 药学制剂（中立线知识） |
+| 奥术 Arcana | 世界观·魔法 | 层间溶剂 / 附魔炼药 / 传送解锁 |
+| 考古 Antiquary | 世界观·遗迹 | 碑文 / 遗物解读（逆向辨识层） |
+| 天文 Astronomy | 探索 | 观星 / 时令 / 航海辨向 |
+| 商道 Trade | 世界观·村民 | 交易 / 会商（村民·猪灵·自建聚落） |
+| 战技 Warfare | 世界观·灾厄 | 武备与征战防卫 |
+| 交通 Wayfare | 交通线 | 三语族统一领域（硬路 / 冰道 / 轨道三支） |
+
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
 | p.2.0 | Realm growth trees / 领域成长树：realm id + 层级投入曲线 + 配方（td schema），事件流 → 成长 | planned / 已立项 |
@@ -136,6 +155,15 @@
 * **横向底座定位**：技术 = 通用学识层，发明深度由相关领域限定（如铁轨 = 筑造技术 × 铁路领域），与 Realm p.2.1 挂点接线合并核对。 / Tech is a horizontal base; invention depth is gated by realms (joined with the p.2.1 gate wiring).
 * **与前人成果 / 世界观衔接**：遗迹遗物 = 同源纪元技术（接上古遗迹保留块）；贤者 = 知识层；跨世界观技术流成立（传奇猪灵冶炼、复现主世界技艺）。 / Ruins carry origin-epoch tech; sages are the knowledge layer; cross-worldview tech exchange exists.
 * **无系统气味**：无科技树 UI / 无科技点数 / 无研发队列；进步只透过「你能做出 / 能互动的事」呈现。 / No tech-tree UI, no tech points, no research queues; progress shows only through what you can make and do.
+
+#### Tech detail / 遗迹逆向拆解机制（2026-09-08 定）
+
+* 五步闭环（全程 diegetic，无进度条，「能否做成」即进度）：**① 检视**（观物得零件视认 / 材料提示 / 磨损铭文）→ **② 拆解**（拆卸台方块内动手，出零件样件；失败 = 部件断裂）→ **③ 试作**（按揣摩组态反向组装 / 触发，成功 = 反向原型 = 「会了」）→ **④ 复现**（自家工坊稳定复刻，掌握程度唯一读数）→ **⑤ 超越**（换材 / 改良 / 原理级创新，接 p.2.4）。 / Five-step loop (all diegetic, no progress bar): inspect -> disassemble (on a disassembly bench) -> reverse-prototype -> replicate (stable output is the only mastery gauge) -> transcend (improve / innovate, feeds p.2.4).
+* 领悟四层：**辨认**（检视 / 贤者识货）→ **复刻**（拆 + 试作）→ **改良**（复刻 + 相关领域）→ **超越**（改良 + 领域精通级）。 / Comprehension tiers: identify, replicate, improve, transcend.
+* 信息与缺损：遗物信息 = 构造 / 材料 / 铭文；拆坏且未修复 → **该件**信息永久缺损，**同类遗物可补全相同知识块**（驱动为补全而探索）。 / Broken artifacts lose info per-piece; same-kind artifacts complete the same knowledge blocks (exploration hook).
+* 知识永久性（2026-09-08 定）：领悟的知识**永久保留、永不遗忘**（与 Realm 不可洗点一致）；失败只损材料 / 工具 / 该件信息，不损已学。 / Learned knowledge is permanent (consistent with realms); failure costs materials/tools, never learned knowledge.
+* 事件流咬合：检视 / 拆解 / 试作全过程计为行为事件（喂贤者传奇度 + 领域成长）；遗物清单 td 声明、按遗迹类型 × 种子确定性生成，第三方可扩展。 / Whole loop feeds the event stream; artifact catalog is td-declared, seed-deterministic, extendable.
+* 工具与工作台：拆卸台（新方块，世界内工作台式交互，非系统面板）+ 锉 / 凿 / 小锤（可耗损工具）。 / Tools: a disassembly bench block plus wearing file/chisel/hammer.
 
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
@@ -160,3 +188,5 @@
 * 2026-09-08 — Realm Line 总框架定案（**否决点数稀缺制**）：自由优先、无领域点硬上限；全能可达但极难（前快后慢成长曲线、成长不可洗点）；领域成长 × 世界观立场正交；顶点「贤者之路」——玩家可成贤（读碑 / 立卷 / 拟规则，非 NPC 专属）。 / Realm Line framework decided (point-cap rejected): freedom-first, no caps; mastering all possible but very hard; growth cumulative; orthogonal to alignment; apex = sage path (players may become sages).
 * 2026-09-08 — 设计原则「无系统气味」定案（全局铁律）：玩家侧禁游戏化系统（HUD 面板 / 进度条 / 数值 / 日志 / 提示），一切以世界语言表达；文档术语仅作内部组织语，玩家侧一律转译为世界实物。 / "No-system" principle decided (global): no gamified systems player-facing; everything diegetic; in-doc terms are internal vocabulary only.
 * 2026-09-08 — 隐型技术线定案（p.2.3–2.4）：零技术知识直觉开局；获得 = 遗迹遗物逆向 / 文明学习 / 实践领悟；学得后创新推进；技术为横向底座按领域限深度；无科技树 UI 与研发队列。 / Tech line decided: intuition-first zero-knowledge start; acquisition via ruins reverse-engineering, civilization learning, practice; innovation after learning; horizontal base gated by realms; no tech-tree UI.
+* 2026-09-08 — 逆向拆解机制细化：五步闭环（检视→拆解→试作→复现→超越）、领悟四层（辨认→复刻→改良→超越）；拆坏信息缺损由同类遗物补全；知识永久保留；拆卸台方块 + 耗损工具；全流程进事件流。 / Reverse-engineering mechanic detailed: five-step loop, four comprehension tiers, same-kind artifact completion, permanent knowledge, disassembly bench.
+* 2026-09-08 — 领域清单第一批 12 定：地质 / 农垦 / 博物 / 冶金 / 工匠 / 草药 / 奥术 / 考古 / 天文 / 商道 / 战技 / 交通（td 可扩展）。 / First-batch realm catalog (12) decided; extendable via contract.
