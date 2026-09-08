@@ -10,6 +10,10 @@
 * 世界改造归 Toterra：消费 Subterra 框架（`subterra-api`）重组九维世界生成、矿石按维度分布、`RegionAnnouncement` 区域命名解锁等。 / World reshaping is Toterra's job: it consumes the Subterra framework (subterra-api) to recombine the nine-dimension worldgen, ore-by-dimension distribution, RegionAnnouncement region-naming unlocks, etc.
 * 世界观分层：物理层（主世界地形 / 气候 / 成矿 / 生态 / 交通物理）按 B 档拟真重写；叙事与超自然层保留 MC 世界观，真实地球物理 × 奇异异界对比为设计意图。 / Worldview layering: the physical layer is rewritten full-realism (B tier); the narrative and supernatural layer keeps the MC lore — realistic earth physics against eerie otherworlds is the design intent.
 
+## Design Principles / 设计原则
+
+* **无「系统」气味（2026-09-08 定，全局铁律）**：玩家侧不得出现游戏化系统——禁 HUD 面板 / 进度条 / 数值计数 / 任务日志 / 等级图标 / 系统提示弹窗。一切以**世界语言**表达：声望 = 世界对你的看法（NPC 态度、可交易与否、遭遇敌意），不为数值面板；领域成长 = 你真正会做的（配方 / 工具 / 行为），无进度条；线索与任务 = 实物（碑文、石卷、书信、遗物），贤者不给「任务」只交谈与交付物件；成贤 = 世界以贤者之礼对待你，而非解锁一个「模式」。设计文档中的术语（声望 / 领域 / 任务链等）仅为内部组织语言，玩家侧一律转译为世界实物，永不裸露。 / No "system" smell (global, decided 2026-09-08): nothing player-facing may look like a gamified system — no HUD panels, progress bars, numeric counters, quest logs, level icons, or system popups. Everything is expressed in the world's own language: reputation is how the world treats you; growth is what you can actually do; quests are physical artifacts; a sage converses and hands you objects, never a quest line; becoming a sage is the world treating you as one. In-doc terms (reputation / realm / quest chain) are internal vocabulary only — never surfaced to the player.
+
 ## Plan / 规划
 
 三线内容于 2026-09-08 定稿（世界线 / 交通体系线 / 生物线），全部为 p 轨条目；实施顺序与子项细化随开发推进确认，未收敛的设计点明示「待细化」，不虚构占位。 / The three content lines were finalized on 2026-09-08 (world / transport / fauna); all are p-track items; order and sub-items are refined as development proceeds; unconverged designs stay marked "to be refined" and nothing is invented.
@@ -140,3 +144,4 @@
 * 2026-09-08 — 势力同盟与种子化平衡态定案：任意主 / 支势力（含跨世界观）可经 `allies` 缔结同盟并影响扩张与事件；无玩家的初始平衡态由世界种子确定性派生（同种子一致）。 / Faction alliances and seed-determined equilibrium decided: `allies` across lines/worldviews; no-player baseline derived deterministically from the world seed.
 * 2026-09-08 — 玩家开局与自建定案：开局主世界观·无势力·空白起点；线索 / 机遇双通道发现；自建三角 = 自建势力（入宇宙学，可争主线）/ 自建聚落（场所基座）/ 自建世界观（贤者立卷，游戏内结晶新世界观）。 / Player entry and self-building decided: faction-free start in Main; clue/opportunity discovery; own faction / settlement / worldview (sage-chronicle crystallization).
 * 2026-09-08 — Realm Line 总框架定案（**否决点数稀缺制**）：自由优先、无领域点硬上限；全能可达但极难（前快后慢成长曲线、成长不可洗点）；领域成长 × 世界观立场正交；顶点「贤者之路」——玩家可成贤（读碑 / 立卷 / 拟规则，非 NPC 专属）。 / Realm Line framework decided (point-cap rejected): freedom-first, no caps; mastering all possible but very hard; growth cumulative; orthogonal to alignment; apex = sage path (players may become sages).
+* 2026-09-08 — 设计原则「无系统气味」定案（全局铁律）：玩家侧禁游戏化系统（HUD 面板 / 进度条 / 数值 / 日志 / 提示），一切以世界语言表达；文档术语仅作内部组织语，玩家侧一律转译为世界实物。 / "No-system" principle decided (global): no gamified systems player-facing; everything diegetic; in-doc terms are internal vocabulary only.
