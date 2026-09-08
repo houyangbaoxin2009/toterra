@@ -46,10 +46,17 @@
 
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
-| p.1.7 | Physiology / 生理层：体重（消费重量体系）+ traits（运动 facets 扩展为体质包 + home terrain mastery，确定性派生） | planned / 已立项 |
+| p.1.7 | Physiology / 生理层：体重（消费重量体系）+ traits（运动 facets：体重 / 体质包 / home terrain mastery，确定性派生）+ **生理分类继承体系**（2026-09-08 定）：分类即模板 / Fauna classes are templates，详下 | planned / 已立项 |
 | p.1.7 | Ecology / 生态层：食物链 + 捕食密度平衡 + 季节行为（迁徙 / 换毛 / 冬眠 / 繁殖季），fauna 维度算法第一实装 | planned / 已立项 |
 | p.1.7 | Behavior / 行为层：驯化三维度（幼年印记 / 食物贿赂 / 信任积累）+ 智力分级（预算分级） | planned / 已立项 |
 | p.1.7 | Variance / 变种：区域种子确定性亚种（毛色 / 体型 / 习性）+ 罕见物种与迁徙走廊作探索目标 | planned / 已立项 |
+
+#### Physiology detail / 生理分类继承体系（2026-09-08 定）
+
+* 不同类生物按其生理特征划分分类轴，每类给一份「运动基包」（十一面 facets 默认值 + 方块系数模板），物种在此之上仅做覆盖——两级继承（分类模板 → 物种覆盖）。 / Animals are grouped by physiology into classes; each class defines a motion base pack (eleven-facet defaults + block-factor template); species only override on top — two-level inheritance (class template → species override).
+* 分类轴：足型/步态（有蹄 / 爪掌 / 趾行 / 蹼足 / 节肢多足 / 鳞足爬行 / 无足滑动 / 羽足）· 体型质量档（轻 / 中 / 重 / 巨型，决定体重基数 → break_w 与驮载）· 被覆物（毛皮 / 角质 / 鳞 / 甲壳，修正摩擦与粘滞）· 运动介质（陆行 / 攀爬 / 水栖 / 滑翔 / 飞行）。 / Axes: foot/stride, mass tier, integument, locomotion medium.
+* 配置量级 O(分类×方块)+O(物种覆盖)，取代 O(物种×方块)；方块系数表即 blocks.td per-mob 的抽象层（fauna_class 模板 + mobs overrides）。 / Config cost drops from O(species×block) to O(class×block)+O(overrides); the factor table is the per-mob abstraction of blocks.td.
+* 咬合：破冰阈值走 break_w（重型/有蹄易裂，轻/蹼稳）、滑倒概率走 slip（与冰双模型闭环）；亚种 traits 仅在类窗口内浮动（生理边界决定变种天花板）；加载期预计算 `分类×方块材质→系数` 常表，零运行时推导。 / Interlocks: ice break via break_w, stumble via slip; variant traits float only within class bounds; load-time precomputed constant table for O(1) lookup.
 
 ### Realm Line / 专精系统（灵魂玩法，待细化）
 
