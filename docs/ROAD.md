@@ -8,10 +8,22 @@
 
 * Toterra 为系列主内容模组（万象之土 / Land of All Things）：万物拟真生存、每个领域深度扩展、生物与地形无穷变种、玩家只能精通少数领域。 / Toterra is the series main content mod: hyper-realistic all-domains survival, deep expansion of every domain, endless exploration variety, each player mastering few realms.
 * 世界改造归 Toterra：消费 Subterra 框架（`subterra-api`）重组九维世界生成、矿石按维度分布、`RegionAnnouncement` 区域命名解锁等。 / World reshaping is Toterra's job: it consumes the Subterra framework (subterra-api) to recombine the nine-dimension worldgen, ore-by-dimension distribution, RegionAnnouncement region-naming unlocks, etc.
+* 世界观分层：物理层（主世界地形 / 气候 / 成矿 / 生态 / 交通物理）按 B 档拟真重写；叙事与超自然层保留 MC 世界观，真实地球物理 × 奇异异界对比为设计意图。 / Worldview layering: the physical layer is rewritten full-realism (B tier); the narrative and supernatural layer keeps the MC lore — realistic earth physics against eerie otherworlds is the design intent.
 
 ## Plan / 规划
 
 三线内容于 2026-09-08 定稿（世界线 / 交通体系线 / 生物线），全部为 p 轨条目；实施顺序与子项细化随开发推进确认，未收敛的设计点明示「待细化」，不虚构占位。 / The three content lines were finalized on 2026-09-08 (world / transport / fauna); all are p-track items; order and sub-items are refined as development proceeds; unconverged designs stay marked "to be refined" and nothing is invented.
+
+### Worldview Retention / 世界观保留清单（2026-09-08 定）
+
+* 四块保留沿用（用户拍板）；清单外内容随拟真重写或待定。 / Four pillars retained (user decision); unlisted content is rewritten or pending.
+
+| Pillar / 块 | Retained / 保留内容 | Link to realism / 与拟真层衔接 |
+| --- | --- | --- |
+| Nether & End / 下界与末地 | 异界维度存在与身份 | 与拟真主世界对比；不参与主世界物理拟真 |
+| Magic & Arcana / 魔法·奥术 | 附魔、炼药、末影珍珠的奥术语义 | 传送压制≠移除，传送为奥术领域进阶解锁（见交通线） |
+| Villager civilization / 村民文明 | 村庄贸易、掠夺者灾厄 | 社会学保留，行为层可按拟真微调 |
+| Ancient ruins / 上古遗迹 | 要塞、远古城市、堡垒的上古叙事 | 文明遗迹压在真实地层之上 |
 
 ### World Line / 世界线 — B 档 TFC 式彻底拟真
 
@@ -29,7 +41,7 @@
 
 * 思想：修路 = 探索循环的推进器（修路 → 移动强化 → 探索更远 → 区域命名 → 地图 → 新路）。 / Roads are an exploration-accelerator loop.
 * 三语族分工：硬路稳 / 冰场快 / 轨道重；重量与承重是交通语义的核心。 / Three families: stable hard roads, fast rinks, heavy rails; weight and load capacity are core.
-* 传送全面压制：鞘翅 / 末影珍珠 / 冰船收弱或移除，陆地交通成为第一价值。 / Teleport suppression makes land transport the primary value.
+* 传送全面压制（压制≠移除，2026-09-08 口径修正）：平民环境收弱鞘翅 / 末影珍珠 / 冰船，陆地交通成为第一价值；传送能力保留为奥术领域进阶解锁（见世界观保留）。 / Teleport suppression (suppress ≠ remove): civilians lose elytra / ender-pearl / ice-boat shortcuts so land transport matters; teleporting returns as a later arcana-realm unlock (see worldview retention).
 
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
@@ -71,3 +83,4 @@
 ## Progress Log / 进度记录
 
 * 2026-09-08 — 内容线初稿落盘：世界线（B 档 TFC 式彻底拟真）、交通体系线（十一面状态包 / 三语族 / 冰双模型 / 传送全面压制）、生物线（现实生物学三大支柱，性能优先）；TFC（EUPL-1.2）定为机制级 clean-room 参考。 / First content-line draft: world line (B, TFC-style full realism), transport line (eleven-facet state pack / three families / ice dual model / full teleport suppression), fauna line (real-biology pillars, performance-first); TFC (EUPL-1.2) adopted as mechanism-level clean-room reference.
+* 2026-09-08 — 世界观保留定案：物理层拟真重写、叙事/超自然层保留（下界与末地 / 魔法奥术 / 村民文明 / 上古遗迹四块）；传送压制口径修正为「压制≠移除」。 / Worldview retention decided: physical layer rewritten, narrative/supernatural layer retained (Nether & End / magic / villagers / ancient ruins); teleport-suppression wording fixed to "suppress ≠ remove".
