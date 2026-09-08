@@ -25,6 +25,25 @@
 | Villager civilization / 村民文明 | 村庄贸易、掠夺者灾厄 | 社会学保留，行为层可按拟真微调 |
 | Ancient ruins / 上古遗迹 | 要塞、远古城市、堡垒的上古叙事 | 文明遗迹压在真实地层之上 |
 
+### Cosmology Line / 世界观线（三世界观宇宙学，2026-09-08 定）
+
+* 三世界观，各三线（正 / 中 / 反）+ 特殊存在；相互独立又彼此影响，贤者知晓真相；混合制声望；影响载体 = 事件联动 + 势力·维度扩张 + 探索任务链。 / Three worldviews, each with three alignment lines plus special beings; independent yet inter-influencing; sages know the truth; hybrid reputation; event links + faction-by-dimension expansion + quest chains.
+
+| Worldview / 世界观 | Stage / 场域 | Justice / 正线 | Neutral / 中线 | Anti / 反线 | Special / 特殊存在 |
+| --- | --- | --- | --- | --- | --- |
+| Main-realistic / 主·现实 | 主世界（拟真层） | 村民 | 女巫 | 灾厄 | 铁傀儡守护叙事 |
+| Legend / 传奇 | 下界 / 不死传说 | 猪灵 | 骷髅 | 凋零系 | — |
+| End / 末影 | 末地 / 虚空渗透 | 末影人 | 潜影贝 | 末影螨 | 末影龙 |
+
+* 玩家关系（混合制）：声望可并存同刷，深度内容（名册 / 传承 / 特有装备）单选一个主立场——契合领域专精。 / Hybrid: reputations coexist for farming, but deep content (codex / heritage / exclusive gear) requires one primary alignment.
+* 贤者（后二者合体，非旅行者）：贤者藏于稀有隐藏据点；另有遗迹 / 圣所碑文承载贤者知识（接上古遗迹保留块）。寻得后解锁世界观 lore 与专属任务链。 / Sages live in hidden strongholds and their knowledge survives in ruin inscriptions (tie-in with ancient ruins); finding them unlocks lore and quest chains.
+* 势力扩张按维度不按地貌：世界观势力在各自维度扩张（猪灵商会打通下界↔主世界贸易前哨、潜影贝巢城于末地聚合、灾厄军团于主世界集结），一图变动泄压到另一图。 / Faction expansion is dimension-bound, not terrain-bound; one domino tips the others.
+
+| p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
+| --- | --- | --- |
+| p.1.8 | Cosmology mechanics / 世界观机制：三线声望（混合制）+ 贤者结构（隐藏据点 + 遗迹碑文）+ 新内容填充（末影鲸 / 末影圣所 / 潜影巢城 / 虚空裂隙 / 骷髅王座 / 猪灵商会驻点 / 凋零祭坛 / 村庄行会 / 灾厄军团行军 / 女巫密会） | planned / 已立项 |
+| p.1.9 | Inter-worldview dynamics / 跨世界观影响：事件联动（枢纽 boss 重排）+ 势力·维度扩张 + 真相任务链 | planned / 已立项 |
+
 ### World Line / 世界线 — B 档 TFC 式彻底拟真
 
 * 经拍板：世界默认档为 B（完全替换），仿 TerraFirmaCraft 真实地理。TFC 为 EUPL-1.2（强 copyleft），定为机制级 clean-room 参考——玩法设计不受版权保护，实现与资产全部自研。 / User decision: default world tier is B (full replacement), modeled on TerraFirmaCraft's realistic geography. TFC is EUPL-1.2 (strong copyleft) — mechanism-level clean-room reference only; implementations and assets are all self-made.
@@ -49,7 +68,7 @@
 | p.1.3 | Hard roads / 硬路语族：土径 → 砂砾 → 石板 → 夯道分档（系数表 td），路网识别（连续方块识别 + 路网等级） | planned / 已立项 |
 | p.1.4 | Ice dual model / 冰双模型：裸冰（变慢·变滑·惯性难停·承重碎裂·特殊状态 stumble/slide）vs 滑冰场（冰下保温层方块改写运动面 → 高速可控），不同冰种系数 / 承重 / 滞时不同 | planned / 已立项 |
 | p.1.5 | Rails / 轨道语族：矿车重制（木 / 石砟 / 铁轨 + 坡度限制 + 下坡蓄力 + 货运车斗），重货干线定位 | planned / 已立项 |
-| p.1.6 | Realm link / 专精联动：筑路 / 冰运 / 铁路三方向深度解锁（供 p.1.9 消费） | planned / 已立项 |
+| p.1.6 | Realm link / 专精联动：筑路 / 冰运 / 铁路三方向深度解锁（供 Realm Line 消费） | planned / 已立项 |
 
 ### Fauna Line / 生物线 — 现实生物学，性能优先
 
@@ -84,3 +103,4 @@
 
 * 2026-09-08 — 内容线初稿落盘：世界线（B 档 TFC 式彻底拟真）、交通体系线（十一面状态包 / 三语族 / 冰双模型 / 传送全面压制）、生物线（现实生物学三大支柱，性能优先）；TFC（EUPL-1.2）定为机制级 clean-room 参考。 / First content-line draft: world line (B, TFC-style full realism), transport line (eleven-facet state pack / three families / ice dual model / full teleport suppression), fauna line (real-biology pillars, performance-first); TFC (EUPL-1.2) adopted as mechanism-level clean-room reference.
 * 2026-09-08 — 世界观保留定案：物理层拟真重写、叙事/超自然层保留（下界与末地 / 魔法奥术 / 村民文明 / 上古遗迹四块）；传送压制口径修正为「压制≠移除」。 / Worldview retention decided: physical layer rewritten, narrative/supernatural layer retained (Nether & End / magic / villagers / ancient ruins); teleport-suppression wording fixed to "suppress ≠ remove".
+* 2026-09-08 — 世界观线定案（p.1.8–1.9）：三世界观 × 三线（主·现实 / 传奇 / 末影，正·中·反 + 特殊存在）；混合制声望（深度内容单选主立场）；贤者 = 隐藏据点 + 遗迹碑文；影响载体 = 事件联动 + 势力·维度扩张 + 真相任务链；新内容提案 10 项入 p.1.8。 / Cosmology line decided: three worldviews × three lines; hybrid reputation; sages via hidden strongholds + ruin inscriptions; influence via event links + dimension-bound faction expansion + truth quest chains; ten new-content proposals into p.1.8.
