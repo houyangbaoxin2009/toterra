@@ -150,6 +150,40 @@
 * 去向 = **可共享注册**：新领域写入通用「藏录 / Ledger」（Subterra 实现），跨存档 / 多人可引用、可被探索。 / Shareable: new realms register into the Ledger (Subterra), cross-save and multiplayer.
 * 代价：创立需领域成长累积 + 相关领域交叉（科研重投入），成长曲线同法则。 / Cost: deep investment and cross-realm intersections; same growth law.
 
+#### Gate wiring / 挂点接线表（p.2.1，2026-09-08 一稿）
+
+* 挂点 = 领域成长树上挂的「世界产物」；门槛档位 = 领域内投入分档（浅尝 / 熟练 / 精通；特殊档：领域交叉、跨领域神话级）。档位为内部语，玩家侧只透过「会不会 / 能不能做」自然生效（无系统气味）。世界生成（地层 / 气候 / 矿脉）为世界侧执行，不设玩家门（预设 × 专精联动见世界线）。 / Wires = world artifacts gated on a realm's growth; tiers are internal vocabulary — players only feel them as "can I do this". Worldgen itself is world-side and ungated (~preset×realm link in the World Line).
+
+| 挂点 Content | 领域 Gate | 档位 Tier |
+| --- | --- | --- |
+| 矿物辨认 / 找矿、矿脉走向 | 地质 Geology | 熟练 |
+| 母岩直觉（按岩层预判成矿） | 地质 Geology | 精通 |
+| 提炼 / 合金工艺 | 冶金 Metallurgy | 熟练 / 精通 |
+| 硬路高档（石板 → 夯道）+ 路网识别 | 交通 · 硬路支 | 熟练 |
+| 滑冰场保温层（冰道可控快线） | 交通 · 冰道支 | 熟练 |
+| 重载轨道 / 货运车斗 | 交通 · 轨道支 | 精通 |
+| 矿车斜坡 / 下坡蓄力 | 交通 · 轨道支 | 熟练 |
+| 物种识别 / 生态知识 | 博物 Naturalism | 熟练 |
+| 驯化三维度（印记 / 贿赂 / 信任） | 博物 Naturalism | 精通 |
+| 附魔 / 炼药 | 奥术 Arcana | 熟练 |
+| 传送（层间溶剂本体） | 奥术 Arcana | 精通 |
+| 遗物辨识 / 碑文解读 | 考古 Antiquary | 熟练 |
+| 铭文 → 超越钩子（贤者识货） | 考古 Antiquary | 精通 |
+| 制药（含与女巫中立知识） | 草药 Herbalism | 熟练 |
+| 时令 / 航海辨向 | 天文 Astronomy | 熟练 |
+| 观星预言 / 跨季知识 | 天文 Astronomy | 精通 |
+| 村民 / 猪灵交易会商 | 商道 Trade | 熟练 |
+| 商会扩张 / 跨世界观贸易 | 商道 Trade | 精通 |
+| 聚落防御 / 征伐 | 战技 Warfare | 熟练 |
+| 灾厄对抗进阶 | 战技 Warfare | 精通 |
+| 自建势力（阵营层） | 任意领域 Any | 熟练 |
+| 自建聚落（场所层） | 任意领域 Any | 浅尝 |
+| 复刻遗物（构造信息） | 工匠 Mechanism | 浅尝 |
+| 改良遗物（材料研究） | 工匠 Mechanism | 熟练 |
+| 超越 / 原理级创新 | 工匠 Mechanism | 精通 |
+| 研究新领域 | 领域交叉 Cross | 涌现（无硬门） |
+| 成贤 / 立卷 / 镜像层 | 跨领域 Mythic | 神话级 |
+
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
 | p.2.0 | Realm growth trees / 领域成长树：realm id + 层级投入曲线 + 配方（td schema），事件流 → 成长 | planned / 已立项 |
@@ -210,3 +244,4 @@
 * 2026-09-08 — 领域清单第一批 12 定：地质 / 农垦 / 博物 / 冶金 / 工匠 / 草药 / 奥术 / 考古 / 天文 / 商道 / 战技 / 交通（td 可扩展）。 / First-batch realm catalog (12) decided; extendable via contract.
 * 2026-09-08 — 研究新领域定案：第一批 12 非封闭清单；纯涌现自持名（实践凝成新领域，无贤者仪式）；可共享注册（写入通用「藏录」跨存档 / 多人引用）；玩家成领域作者。 / Realm invention decided: emergence + self-naming; shareable via the Ledger; players become realm authors.
 * 2026-09-08 — 「贤者册」通用化定案：重命名为「藏录 / Ledger」，Subterra 实现（新领域 / 结晶世界观 / 镜像层 / 遗物条目通用登记，td + API 双接口）；Toterra 消费 sub，贤者册仅为其 diegetic 面貌；世界观契约语义仍在 Toterra。 / Sage-registry generalized as the Ledger, implemented in Subterra; Toterra consumes it; contract semantics stay in Toterra.
+* 2026-09-08 — 挂点接线表一稿（p.2.1）落定：27 项内容挂点 × 12 领域三档门槛（含领域交叉 / 跨领域神话级两特殊档）；世界生成为世界侧执行不设玩家门；门槛档位为内部语，玩家侧无 UI。 / Gate-wiring first draft landed: 27 wires across the 12 realms; worldgen ungated; tiers are internal vocabulary only.
