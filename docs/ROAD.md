@@ -173,6 +173,14 @@
 * 知识永久性（2026-09-08 定）：领悟的知识**永久保留、永不遗忘**（与 Realm 不可洗点一致）；失败只损材料 / 工具 / 该件信息，不损已学。 / Learned knowledge is permanent (consistent with realms); failure costs materials/tools, never learned knowledge.
 * 事件流咬合：检视 / 拆解 / 试作全过程计为行为事件（喂贤者传奇度 + 领域成长）；遗物清单 td 声明、按遗迹类型 × 种子确定性生成，第三方可扩展。 / Whole loop feeds the event stream; artifact catalog is td-declared, seed-deterministic, extendable.
 * 工具与工作台：拆卸台（新方块，世界内工作台式交互，非系统面板）+ 锉 / 凿 / 小锤（可耗损工具）。 / Tools: a disassembly bench block plus wearing file/chisel/hammer.
+* **遗物四类（td dtype）**：器械（构造侧重 → 机械零件）/ 器皿（材料侧重 → 冶炼铸艺）/ 图籍（铭文侧重 → 直接知识 / 贤者线索）/ 标本（材料细分 → 配方参考）；识别 = 「看着像器物」，**无高亮**。 / Four artifact kinds steering info emphasis; spotted by look, never highlighted.
+* **拆卸台交互**：三槽 = 检视（免耗）· 拆解（锉凿锤，选部位 + 力道）· 试作（台面格拼组）；力道三档：轻柔（慢·高成）· 常规 · 粗暴（快·高断裂风险），纯物理隐喻无百分比；产出 = 零件（实体物品，可交易 / 可损坏）+ 残渣 + 铭文撕片。 / Three actions, three force tiers (no percentages); output parts, residue, inscription scraps.
+* **信息三维**：构造 → 复刻可；材料 → 改良可；铭文 → 辨认与超越（铭文挂世界观钩子，可指向某线 / 贤者线索）；通道 = 检视（劣）→ 拆解（+）→ 试作（++）→ 贤者识货（铭文+，绝不代拆）。 / Three info dimensions; sages identify but never take the tools from your hands.
+* **试作与「会了」**：零件按揣摩组态摆放（无提示），正确 = 反向原型；错误 = 散架（零件可回收 · 耗时）或组态卡死（需重拆）；原型 + 工坊稳定复现 2–3 次 = 技艺永久保存。 / Reverse prototype; mastery = stable replication twice or thrice.
+* **复现稳定性**：新学低产出率，随复现次数趋稳（读数 = 做出几件，非进度条）；材料纯度 / 工具品质介入（冶金 · 工匠领域）。 / Output stabilizes with practice; mastery read as pieces made, never a bar.
+* **失败范围（2026-09-08 定）**：拆坏**仅伤部位**——零件变废料、该件该部位信息缺损（同类补全为唯一挽回）；整件永不报废。 / Breakage damages parts only; the artifact itself never destroyed.
+* **拆链阶梯（2026-09-08 定，T0–T4）**：技术分阶 = 逆向工具升级链——「第一件逆向 = 拆卸工具自己」：T0 直觉（石凿 / 手锉）→ T1 简易器（拆卸台）→ T2 机械（锉磨 / 车削）→ T3 精密（光学 / 精工）→ T4 符械（奥术交叉）。 / Tool-chain ladder T0–T4; the first reverse-engineered thing is the disassembly tool itself.
+* **生成规则**：遗物按遗迹类型 × 种子确定性生成（td 清单，可扩展）；rarity = 常见残件 / 少见完整器械 / 稀有图籍·铭文完整件。 / Seed-deterministic generation; three rarity tiers.
 
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
@@ -198,6 +206,7 @@
 * 2026-09-08 — 设计原则「无系统气味」定案（全局铁律）：玩家侧禁游戏化系统（HUD 面板 / 进度条 / 数值 / 日志 / 提示），一切以世界语言表达；文档术语仅作内部组织语，玩家侧一律转译为世界实物。 / "No-system" principle decided (global): no gamified systems player-facing; everything diegetic; in-doc terms are internal vocabulary only.
 * 2026-09-08 — 隐型技术线定案（p.2.3–2.4）：零技术知识直觉开局；获得 = 遗迹遗物逆向 / 文明学习 / 实践领悟；学得后创新推进；技术为横向底座按领域限深度；无科技树 UI 与研发队列。 / Tech line decided: intuition-first zero-knowledge start; acquisition via ruins reverse-engineering, civilization learning, practice; innovation after learning; horizontal base gated by realms; no tech-tree UI.
 * 2026-09-08 — 逆向拆解机制细化：五步闭环（检视→拆解→试作→复现→超越）、领悟四层（辨认→复刻→改良→超越）；拆坏信息缺损由同类遗物补全；知识永久保留；拆卸台方块 + 耗损工具；全流程进事件流。 / Reverse-engineering mechanic detailed: five-step loop, four comprehension tiers, same-kind artifact completion, permanent knowledge, disassembly bench.
+* 2026-09-08 — 逆向拆解深挖：遗物四类（器械/器皿/图籍/标本，td dtype）、拆卸台三槽 + 力道三档（无百分比）、信息三维（构造→复刻 / 材料→改良 / 铭文→辨认超越·挂世界观钩）、试作与「会了」判定；失败仅伤部位；拆链阶梯 T0–T4（第一件逆向 = 拆卸工具）；遗物按遗迹 × 种子确定性生成。 / Reverse-engineering deepened: four artifact kinds, three actions + three force tiers, three info dimensions, prototype/mastery rules, part-only breakage, T0–T4 tool-chain ladder, seed-deterministic generation.
 * 2026-09-08 — 领域清单第一批 12 定：地质 / 农垦 / 博物 / 冶金 / 工匠 / 草药 / 奥术 / 考古 / 天文 / 商道 / 战技 / 交通（td 可扩展）。 / First-batch realm catalog (12) decided; extendable via contract.
 * 2026-09-08 — 研究新领域定案：第一批 12 非封闭清单；纯涌现自持名（实践凝成新领域，无贤者仪式）；可共享注册（写入通用「藏录」跨存档 / 多人引用）；玩家成领域作者。 / Realm invention decided: emergence + self-naming; shareable via the Ledger; players become realm authors.
 * 2026-09-08 — 「贤者册」通用化定案：重命名为「藏录 / Ledger」，Subterra 实现（新领域 / 结晶世界观 / 镜像层 / 遗物条目通用登记，td + API 双接口）；Toterra 消费 sub，贤者册仅为其 diegetic 面貌；世界观契约语义仍在 Toterra。 / Sage-registry generalized as the Ledger, implemented in Subterra; Toterra consumes it; contract semantics stay in Toterra.
