@@ -6,7 +6,7 @@
 
 ## Positioning / 定位
 
-* Toterra 为系列主内容模组（万象之土 / Land of All Things）：万物拟真生存、每个领域深度扩展、生物与地形无穷变种、玩家只能精通少数领域。 / Toterra is the series main content mod: hyper-realistic all-domains survival, deep expansion of every domain, endless exploration variety, each player mastering few realms.
+* Toterra 为系列主内容模组（万象之土 / Land of All Things）：万物拟真生存、每个领域深度扩展、生物与地形无穷变种、玩家自由成长——全能者可达成但极难。 / Toterra is the series main content mod: hyper-realistic all-domains survival, deep expansion of every domain, endless exploration variety, free growth — mastering all is possible but extremely demanding.
 * 世界改造归 Toterra：消费 Subterra 框架（`subterra-api`）重组九维世界生成、矿石按维度分布、`RegionAnnouncement` 区域命名解锁等。 / World reshaping is Toterra's job: it consumes the Subterra framework (subterra-api) to recombine the nine-dimension worldgen, ore-by-dimension distribution, RegionAnnouncement region-naming unlocks, etc.
 * 世界观分层：物理层（主世界地形 / 气候 / 成矿 / 生态 / 交通物理）按 B 档拟真重写；叙事与超自然层保留 MC 世界观，真实地球物理 × 奇异异界对比为设计意图。 / Worldview layering: the physical layer is rewritten full-realism (B tier); the narrative and supernatural layer keeps the MC lore — realistic earth physics against eerie otherworlds is the design intent.
 
@@ -16,7 +16,7 @@
 
 ## Plan / 规划
 
-三线内容于 2026-09-08 定稿（世界线 / 交通体系线 / 生物线），全部为 p 轨条目；实施顺序与子项细化随开发推进确认，未收敛的设计点明示「待细化」，不虚构占位。 / The three content lines were finalized on 2026-09-08 (world / transport / fauna); all are p-track items; order and sub-items are refined as development proceeds; unconverged designs stay marked "to be refined" and nothing is invented.
+六条设计线于 2026-09-08 定稿（世界线 / 交通体系线 / 生物线 / 世界观线 / 领域线 / 科技线），全部为 p 轨条目；实施顺序与子项细化随开发推进确认，未收敛的设计点明示「待细化」，不虚构占位。 / The six design lines were finalized on 2026-09-08 (world / transport / fauna / cosmology / realm / tech); all are p-track items; order and sub-items are refined as development proceeds; unconverged designs stay marked "to be refined" and nothing is invented.
 
 * **藏录 / Ledger（通用内容登记册，Subterra 实现；2026-09-08 定）**：「贤者册」抽象**重命名通用化**，作 Subterra 框架能力落地——可注册 新领域 / 结晶世界观 / 镜像层 / 遗物条目 等世界内容，td 驱动 + API 双接口；**Toterra 消费 Sub 实现**，「贤者册」仅为其在主世界观语境的 diegetic 面貌；世界观注册契约语义仍由 Toterra 定义（前定），持久化与登记复用 Subterra Ledger。 / The "sage registry" abstraction is generalized and renamed the Ledger, implemented in Subterra (a generic content registry: new realms / crystallized worldviews / mirror layers / artifact entries; td + API); Toterra consumes it; the sage registry is only its diegetic face in the Main worldview; worldview-contract semantics stay in Toterra.
 
@@ -81,7 +81,7 @@
 | p.1.1 | Litho strata / 岩性地层：litho 维度换 StrataAlgo（区域分层 + 岩石类型组态，td 定义），首个「维度独立换算法」验证 | planned / 已立项 |
 | p.1.1 | Ore by parent rock / 矿石按母岩：mineral × {岩石类} 前置规则 + 矿脉走向，接结构护栏防重叠 | planned / 已立项 |
 | p.1.1 | Climate-driven vegetation / 气候驱动植被：climate → vegetation 接缝（温度 / 降雨 / 蒸散 → 植被带） | planned / 已立项 |
-| p.1.1 | World preset × realm link / 世界预设 × 专精联动：不同预设资源分布不同（供 p.1.9 专精系统消费） | planned / 已立项 |
+| p.1.1 | World preset × realm link / 世界预设 × 领域联动：不同预设资源分布不同（供 Realm Line 消费） | planned / 已立项 |
 
 ### Transport Line / 交通体系线
 
@@ -187,7 +187,7 @@
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
 | p.2.0 | Realm growth trees / 领域成长树：realm id + 层级投入曲线 + 配方（td schema），事件流 → 成长 | planned / 已立项 |
-| p.2.1 | Gate wiring / 跨领域挂点接线：世界 / 交通 / 生物 / 世界观各内容的领域门槛 | planned / 已立项 |
+| p.2.1 | Gate wiring / 跨领域挂点接线：世界 / 交通 / 生物 / 世界观各内容的领域门槛（挂点表一稿已定，详上） | designed / 已定（一稿） |
 | p.2.2 | Sage path / 贤者之路：成贤阈值（神话级）+ 贤者能力（读碑 / 立卷 / 拟规则） | planned / 已立项 |
 
 ### Tech Line / 隐型技术线（2026-09-08 定）
