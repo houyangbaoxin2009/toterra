@@ -110,9 +110,19 @@
 * 配置量级 O(分类×方块)+O(物种覆盖)，取代 O(物种×方块)；方块系数表即 blocks.td per-mob 的抽象层（fauna_class 模板 + mobs overrides）。 / Config cost drops from O(species×block) to O(class×block)+O(overrides); the factor table is the per-mob abstraction of blocks.td.
 * 咬合：破冰阈值走 break_w（重型/有蹄易裂，轻/蹼稳）、滑倒概率走 slip（与冰双模型闭环）；亚种 traits 仅在类窗口内浮动（生理边界决定变种天花板）；加载期预计算 `分类×方块材质→系数` 常表，零运行时推导。 / Interlocks: ice break via break_w, stumble via slip; variant traits float only within class bounds; load-time precomputed constant table for O(1) lookup.
 
-### Realm Line / 专精系统（灵魂玩法，待细化）
+### Realm Line / 领域专精（灵魂玩法，p.2 轨起）
 
-* 玩家只能精通少数领域；筑路 / 冰运 / 铁路 / 博物·驯养等领域的深度解锁联动世界、交通、生物三线；设计未定时不填充细节。 / Mastery of few realms; realm unlocks tie the three lines together; details pending.
+* 总原则（2026-09-08 定，**否决点数稀缺制**）：**自由优先**——MC 的灵魂是自由，不给玩家设固定框架与领域点硬上限。玩家可精通**全领域**，只是**极难达成**；「只能精通少数」是涌现结果而非规则。 / Overriding principle: freedom first — no realm-point caps or fixed fences; mastering all realms is possible but very demanding; "few realms in practice" emerges from depth, not rules.
+* 领域成长 = 开放深层成长树：每领域一条连续成长线（入学 → 深层，无硬顶），逐级投入递增（行为事件流 / 资源 / 仪式），曲线**前快后慢**；成长可累积不可洗点（记忆属于现实，洗不掉）。 / Open deep growth trees per realm, un-capped, escalating costs, front-loaded then steep; growth is cumulative and never resettable.
+* 正交解耦：**领域成长（技能）** × **世界观主立场（意识形态）** 互不锁死；领域决定你会干什么，立场决定你站在哪。 / Realm growth orthogonal to worldview alignment.
+* **贤者之路（全能者的顶点）**：跨领域成长累积达「神话」阈值后，玩家可选**成贤**——成为宇宙学的观察者 / 记录者（读全部碑文、立卷之权、可自拟世界观规则），亦可继续作凡人玩家；贤者不是 NPC 专属，是玩家的终极人生选项，与「贤者立卷」机制闭环。 / Sage path: at mythic breadth the player may become a sage — the cosmology's observer / recorder; sages are not NPC-exclusive; the player's ultimate life choice, closing the loop with the sage-chronicle mechanic.
+* 存档与性能：领域成长档案 = 行为事件流累积（td/zd），零全局模拟、零热路径开销。 / Save-side deterministic ledger; no global simulation or hot-path cost.
+
+| p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
+| --- | --- | --- |
+| p.2.0 | Realm growth trees / 领域成长树：realm id + 层级投入曲线 + 配方（td schema），事件流 → 成长 | planned / 已立项 |
+| p.2.1 | Gate wiring / 跨领域挂点接线：世界 / 交通 / 生物 / 世界观各内容的领域门槛 | planned / 已立项 |
+| p.2.2 | Sage path / 贤者之路：成贤阈值（神话级）+ 贤者能力（读碑 / 立卷 / 拟规则） | planned / 已立项 |
 
 ## Discipline / 纪律
 
@@ -129,3 +139,4 @@
 * 2026-09-08 — 支线机制定案：`kind=side` 三世界观通用；平衡态铁律（无玩家不演进，零后台开销）；晋升 = 玩家驱动、冲突择一；首批支线在主世界观（僵尸 / 吸血鬼 / 精灵）。 / Side-line mechanism decided: generic `kind=side`; equilibrium rule; player-driven promotion with manual pick on tie; first batch in Main (zombie / vampire / elf).
 * 2026-09-08 — 势力同盟与种子化平衡态定案：任意主 / 支势力（含跨世界观）可经 `allies` 缔结同盟并影响扩张与事件；无玩家的初始平衡态由世界种子确定性派生（同种子一致）。 / Faction alliances and seed-determined equilibrium decided: `allies` across lines/worldviews; no-player baseline derived deterministically from the world seed.
 * 2026-09-08 — 玩家开局与自建定案：开局主世界观·无势力·空白起点；线索 / 机遇双通道发现；自建三角 = 自建势力（入宇宙学，可争主线）/ 自建聚落（场所基座）/ 自建世界观（贤者立卷，游戏内结晶新世界观）。 / Player entry and self-building decided: faction-free start in Main; clue/opportunity discovery; own faction / settlement / worldview (sage-chronicle crystallization).
+* 2026-09-08 — Realm Line 总框架定案（**否决点数稀缺制**）：自由优先、无领域点硬上限；全能可达但极难（前快后慢成长曲线、成长不可洗点）；领域成长 × 世界观立场正交；顶点「贤者之路」——玩家可成贤（读碑 / 立卷 / 拟规则，非 NPC 专属）。 / Realm Line framework decided (point-cap rejected): freedom-first, no caps; mastering all possible but very hard; growth cumulative; orthogonal to alignment; apex = sage path (players may become sages).
