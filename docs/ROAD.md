@@ -52,10 +52,18 @@
   * **自建聚落**（场所层）：村落建设（占地 / 人口 / 防御 / 贸易航线），接村民文明与交通线，是自建势力的物理基座。 / Own settlement: colony building tied to villager civilization and transport; the physical base of the own faction.
   * **自建世界观**（叙事层）：「贤者立卷」——贤者记录玩家与势力所为成文，传奇度达标后结晶为**可注册的新世界观主体**（游戏内叙事路径；开发者路径仍为注册契约），供其他存档 / 多人世界探索。 / Own worldview: sage chronicles of player deeds crystallize into a new registered worldview once legendary (in-game narrative path; the dev path stays the contract), explorable in other saves/servers.
 
+#### World truth & sage chronicle / 世界真相与贤者立卷（2026-09-08 定）
+
+* 核心命题（宇宙学内核）：**世界观 = 结晶化的叙事层**。主·现实 = 持续推进的「现在层」（B 档物理拟真为其语法）；传奇 / 末影 = 两次被封存的历史层（传奇 = 被遗忘的愤怒，末影 = 边界与外）；上古遗迹 = 诸层分裂前的同源纪元残留；魔法奥术 = 层间渗漏的「溶剂」（故传送归奥术领域解锁）；贤者立卷 = 宇宙学运行本身——玩家结晶新世界观即系统执行现场。 / Core thesis: worldviews are crystallized narrative layers. Main = the ongoing now-layer; Legend / End = sealed historical layers; ruins = pre-schism origin-epoch remnants; arcana = solvent leaking between layers (hence teleport unlocks via the arcana realm); the sage chronicle is the cosmology executing — a player-crystallized worldview is the system in action.
+* 贤者三卷（每卷对应一层真相）：**骄阳卷**（现在层起源）· **白骨卷**（传奇层失落）· **星钥卷**（末影层边界）；三卷各挂主管世界观事件作解锁阈值——白骨 ⇒ 传奇线事件、星钥 ⇒ 屠龙后解锁、骄阳 ⇒ 主世界文明推进。 / Three sage tomes: Sunrise (now) / Bone (legend) / Star-key (end); each unlock gated by its worldview's events.
+* 立卷机制：记录源 = 行为事件流（声望 / 枢纽 boss / 支线晋升 / 聚落成就）；传奇度谱系 = 平凡 → 事迹 → 传奇 → **神话级阈值**；封卷即生成新世界观 td 注册（三线结构由玩家混合制主立场推断，自建势力成其创始正线）；**无玩家不推进**（与种子化平衡态同源）。 / Chronicle mechanics: event stream → legendary tiers → mythic threshold seals a new worldview registration; no-player-no-progress.
+* 终局（**真相开放**，非单一大结局）：真相是客观事实（结晶—层叠—补写）；玩家立场选择只决定自身势力 / 线的走向，世界继续运转。 / Open truth: objective mechanism, no single ending; player stance shapes only their own lines.
+* 封卷实感（**可进入的镜像层**）：封存的层作镜像场景供其他存档 / 多人进入，体验固化的传奇时刻——无尽探索推向「探索他人封存的传奇层」。 / Sealed layers become enterable mirror scenes — exploration of others' crystallized legends.
+
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
 | p.1.8 | Cosmology mechanics / 世界观机制：注册契约（td 声明 / 模组钩子，links 全开放）+ 三线声望（混合制）+ 势力同盟（`allies`，跨世界观可结盟）+ 种子化平衡态 + 支线机制（`kind=side`，平衡态 / 玩家驱动晋升 / 冲突择一）+ 玩家自建三角（势力 / 聚落 / 贤者立卷世界观）+ 贤者结构（隐藏据点 + 遗迹碑文）+ 新内容填充（末影鲸 / 末影圣所 / 潜影巢城 / 虚空裂隙 / 骷髅王座 / 猪灵商会驻点 / 凋零祭坛 / 村庄行会 / 灾厄军团行军 / 女巫密会 / 僵尸 / 吸血鬼 / 精灵） | planned / 已立项 |
-| p.1.9 | Inter-worldview dynamics / 跨世界观影响：事件联动（枢纽 boss 重排）+ 势力·维度扩张 + 真相任务链 | planned / 已立项 |
+| p.1.9 | Inter-worldview dynamics / 跨世界观影响：事件联动（枢纽 boss 重排）+ 势力·维度扩张 + 真相任务链（贤者三卷：骄阳 / 白骨 / 星钥）+ 贤者立卷（传奇度谱系 → 封卷结晶新世界观 → 镜像层可入） | planned / 已立项 |
 
 ### World Line / 世界线 — B 档 TFC 式彻底拟真
 
