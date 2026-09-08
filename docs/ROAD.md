@@ -43,9 +43,18 @@
 * 势力同盟（2026-09-08 定）：任意势力（主 / 支线，可跨世界观）可声明缔结同盟；同盟改变势力扩张与事件联动走向（结盟互助、共享声望事件），经 `links`/新 `allies` 表声明。 / Faction alliances: any lines (main or side, possibly cross-worldview) may declare alliances; alliances reshape expansion and event dynamics, declared via `links`/`allies`.
 * 种子化平衡态（2026-09-08 定）：无玩家的初始平衡态由**世界种子**确定性派生——不同种子下各线初始倾向、支线接近晋升的程度、势力亲疏各不相同；同种子完全一致。 / Seed-determined equilibrium: the no-player baseline is deterministically derived from the world seed; each world's cosmological opening differs, identical for the same seed.
 
+#### Player entry & self-building / 玩家开局与自建（2026-09-08 定）
+
+* 开局：出生主世界观、不属于任何势力、无初始声望——即系统内的「空白起点」。 / Start: spawned in the Main worldview, faction-free, zero reputation — the blank start of the system.
+* 发现双通道：**线索**（贤者碑文 / 遗迹 / 隐藏据点，知识层，缓慢）+ **机遇**（支线遭遇 / 势力事件 / 同盟动向，事件层，突发）；两通道交汇处即玩家抉择点。 / Discovery via two channels: clues (knowledge layer) and opportunities (event layer), converging at the choice points.
+* 自建三角（三者皆有，2026-09-08 定）：
+  * **自建势力**（阵营层）：玩家派系注册入宇宙学，可结盟 / 参与势力扩张 / 积累声望，成为主世界观主线晋升候选（与 NPC 主线·支线竞争）。 / Own faction: registers into the cosmology; may ally, expand, gain reputation, and compete for the Main main-line throne.
+  * **自建聚落**（场所层）：村落建设（占地 / 人口 / 防御 / 贸易航线），接村民文明与交通线，是自建势力的物理基座。 / Own settlement: colony building tied to villager civilization and transport; the physical base of the own faction.
+  * **自建世界观**（叙事层）：「贤者立卷」——贤者记录玩家与势力所为成文，传奇度达标后结晶为**可注册的新世界观主体**（游戏内叙事路径；开发者路径仍为注册契约），供其他存档 / 多人世界探索。 / Own worldview: sage chronicles of player deeds crystallize into a new registered worldview once legendary (in-game narrative path; the dev path stays the contract), explorable in other saves/servers.
+
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
-| p.1.8 | Cosmology mechanics / 世界观机制：注册契约（td 声明 / 模组钩子，links 全开放）+ 三线声望（混合制）+ 势力同盟（`allies`，跨世界观可结盟）+ 种子化平衡态 + 支线机制（`kind=side`，平衡态 / 玩家驱动晋升 / 冲突择一）+ 贤者结构（隐藏据点 + 遗迹碑文）+ 新内容填充（末影鲸 / 末影圣所 / 潜影巢城 / 虚空裂隙 / 骷髅王座 / 猪灵商会驻点 / 凋零祭坛 / 村庄行会 / 灾厄军团行军 / 女巫密会 / 僵尸 / 吸血鬼 / 精灵） | planned / 已立项 |
+| p.1.8 | Cosmology mechanics / 世界观机制：注册契约（td 声明 / 模组钩子，links 全开放）+ 三线声望（混合制）+ 势力同盟（`allies`，跨世界观可结盟）+ 种子化平衡态 + 支线机制（`kind=side`，平衡态 / 玩家驱动晋升 / 冲突择一）+ 玩家自建三角（势力 / 聚落 / 贤者立卷世界观）+ 贤者结构（隐藏据点 + 遗迹碑文）+ 新内容填充（末影鲸 / 末影圣所 / 潜影巢城 / 虚空裂隙 / 骷髅王座 / 猪灵商会驻点 / 凋零祭坛 / 村庄行会 / 灾厄军团行军 / 女巫密会 / 僵尸 / 吸血鬼 / 精灵） | planned / 已立项 |
 | p.1.9 | Inter-worldview dynamics / 跨世界观影响：事件联动（枢纽 boss 重排）+ 势力·维度扩张 + 真相任务链 | planned / 已立项 |
 
 ### World Line / 世界线 — B 档 TFC 式彻底拟真
@@ -110,3 +119,5 @@
 * 2026-09-08 — 世界观线定案（p.1.8–1.9）：三世界观 × 三线（主·现实 / 传奇 / 末影，正·中·反 + 特殊存在）；混合制声望（深度内容单选主立场）；贤者 = 隐藏据点 + 遗迹碑文；影响载体 = 事件联动 + 势力·维度扩张 + 真相任务链；新内容提案 10 项入 p.1.8。 / Cosmology line decided: three worldviews × three lines; hybrid reputation; sages via hidden strongholds + ruin inscriptions; influence via event links + dimension-bound faction expansion + truth quest chains; ten new-content proposals into p.1.8.
 * 2026-09-08 — 世界观开放扩展定案：注册契约内置于 Toterra（数据包纯 td / 模组 td+钩子），links 跨世界观链接全开放声明式。 / Worldview open-extension decided: registration contract lives in Toterra (datapack pure-td / mod td+hooks); cross-worldview links are fully open and declarative.
 * 2026-09-08 — 支线机制定案：`kind=side` 三世界观通用；平衡态铁律（无玩家不演进，零后台开销）；晋升 = 玩家驱动、冲突择一；首批支线在主世界观（僵尸 / 吸血鬼 / 精灵）。 / Side-line mechanism decided: generic `kind=side`; equilibrium rule; player-driven promotion with manual pick on tie; first batch in Main (zombie / vampire / elf).
+* 2026-09-08 — 势力同盟与种子化平衡态定案：任意主 / 支势力（含跨世界观）可经 `allies` 缔结同盟并影响扩张与事件；无玩家的初始平衡态由世界种子确定性派生（同种子一致）。 / Faction alliances and seed-determined equilibrium decided: `allies` across lines/worldviews; no-player baseline derived deterministically from the world seed.
+* 2026-09-08 — 玩家开局与自建定案：开局主世界观·无势力·空白起点；线索 / 机遇双通道发现；自建三角 = 自建势力（入宇宙学，可争主线）/ 自建聚落（场所基座）/ 自建世界观（贤者立卷，游戏内结晶新世界观）。 / Player entry and self-building decided: faction-free start in Main; clue/opportunity discovery; own faction / settlement / worldview (sage-chronicle crystallization).
