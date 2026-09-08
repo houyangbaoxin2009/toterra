@@ -128,6 +128,20 @@
 | p.2.1 | Gate wiring / 跨领域挂点接线：世界 / 交通 / 生物 / 世界观各内容的领域门槛 | planned / 已立项 |
 | p.2.2 | Sage path / 贤者之路：成贤阈值（神话级）+ 贤者能力（读碑 / 立卷 / 拟规则） | planned / 已立项 |
 
+### Tech Line / 隐型技术线（2026-09-08 定）
+
+* **定义**：科技不预设技术树——玩家初始**零技术知识**，仅凭直觉（燧石割裂 / 生火 / 简单工具），科技史 = 发现史。 / No preset tech tree: the player starts with zero technical knowledge, relying on intuition; technology is a history of discovery.
+* **获得通道（diegetic）**：① 意外发现前人成果（遗迹残件 / 图纸拓片 / 工具样例 → 逆向拆解）；② 接触文明（村民手艺人、贤者、猪灵商会的经验传授）；③ 实践验证（学会 ≠ 领悟，需在动手使用中掌握）。 / Acquisition: discovering predecessors' works in ruins, learning from civilizations, mastering through practice.
+* **推动发展**：在学得的基础上**创新推进**（设计新物件 / 新机械），新人造物反哺世界（更优工具、可造更强基建）——技术是可扩展的，玩家可把科技推过前人。 / After learning, the player innovates and pushes technology beyond the ancestors; new artifacts feed back into the world.
+* **横向底座定位**：技术 = 通用学识层，发明深度由相关领域限定（如铁轨 = 筑造技术 × 铁路领域），与 Realm p.2.1 挂点接线合并核对。 / Tech is a horizontal base; invention depth is gated by realms (joined with the p.2.1 gate wiring).
+* **与前人成果 / 世界观衔接**：遗迹遗物 = 同源纪元技术（接上古遗迹保留块）；贤者 = 知识层；跨世界观技术流成立（传奇猪灵冶炼、复现主世界技艺）。 / Ruins carry origin-epoch tech; sages are the knowledge layer; cross-worldview tech exchange exists.
+* **无系统气味**：无科技树 UI / 无科技点数 / 无研发队列；进步只透过「你能做出 / 能互动的事」呈现。 / No tech-tree UI, no tech points, no research queues; progress shows only through what you can make and do.
+
+| p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
+| --- | --- | --- |
+| p.2.3 | Intuition & discovery / 直觉与发现：零知识开局（凭直觉原始制作）、遗迹技术遗物（逆向）、文明接触学习（手艺人 / 贤者 / 商会） | planned / 已立项 |
+| p.2.4 | Push & tiers / 推进与分阶：学得基础上创新（新设计 / 新机械），分阶仅以「能做之事」呈现，跨世界观技术交流 | planned / 已立项 |
+
 ## Discipline / 纪律
 
 * 小任务逐个提交：每完成一个小任务即报告并提交一次，得确认后再做下一个。 / Small tasks are submitted one at a time; each is reported and committed before the next starts.
@@ -145,3 +159,4 @@
 * 2026-09-08 — 玩家开局与自建定案：开局主世界观·无势力·空白起点；线索 / 机遇双通道发现；自建三角 = 自建势力（入宇宙学，可争主线）/ 自建聚落（场所基座）/ 自建世界观（贤者立卷，游戏内结晶新世界观）。 / Player entry and self-building decided: faction-free start in Main; clue/opportunity discovery; own faction / settlement / worldview (sage-chronicle crystallization).
 * 2026-09-08 — Realm Line 总框架定案（**否决点数稀缺制**）：自由优先、无领域点硬上限；全能可达但极难（前快后慢成长曲线、成长不可洗点）；领域成长 × 世界观立场正交；顶点「贤者之路」——玩家可成贤（读碑 / 立卷 / 拟规则，非 NPC 专属）。 / Realm Line framework decided (point-cap rejected): freedom-first, no caps; mastering all possible but very hard; growth cumulative; orthogonal to alignment; apex = sage path (players may become sages).
 * 2026-09-08 — 设计原则「无系统气味」定案（全局铁律）：玩家侧禁游戏化系统（HUD 面板 / 进度条 / 数值 / 日志 / 提示），一切以世界语言表达；文档术语仅作内部组织语，玩家侧一律转译为世界实物。 / "No-system" principle decided (global): no gamified systems player-facing; everything diegetic; in-doc terms are internal vocabulary only.
+* 2026-09-08 — 隐型技术线定案（p.2.3–2.4）：零技术知识直觉开局；获得 = 遗迹遗物逆向 / 文明学习 / 实践领悟；学得后创新推进；技术为横向底座按领域限深度；无科技树 UI 与研发队列。 / Tech line decided: intuition-first zero-knowledge start; acquisition via ruins reverse-engineering, civilization learning, practice; innovation after learning; horizontal base gated by realms; no tech-tree UI.
