@@ -38,6 +38,7 @@
 * 玩家关系（混合制）：声望可并存同刷，深度内容（名册 / 传承 / 特有装备）单选一个主立场——契合领域专精。 / Hybrid: reputations coexist for farming, but deep content (codex / heritage / exclusive gear) requires one primary alignment.
 * 贤者（后二者合体，非旅行者）：贤者藏于稀有隐藏据点；另有遗迹 / 圣所碑文承载贤者知识（接上古遗迹保留块）。寻得后解锁世界观 lore 与专属任务链。 / Sages live in hidden strongholds and their knowledge survives in ruin inscriptions (tie-in with ancient ruins); finding them unlocks lore and quest chains.
 * 势力扩张按维度不按地貌：世界观势力在各自维度扩张（猪灵商会打通下界↔主世界贸易前哨、潜影贝巢城于末地聚合、灾厄军团于主世界集结），一图变动泄压到另一图。 / Faction expansion is dimension-bound, not terrain-bound; one domino tips the others.
+* 开放扩展（2026-09-08 定）：世界观注册契约**内置于 Toterra**（非 Subterra）；第三方经数据包（纯 td 声明）或模组（td + 代码钩子）添加新世界观；跨世界观 `links` 事件链接**全开放声明式**，任何注册世界观可参与联动与泄压；第三方依赖 = Subterra + Toterra。 / Open extension: the worldview registration contract is built into Toterra; third parties add worldviews via datapacks (pure td) or mods (td + code hooks); cross-worldview `links` are fully open and declarative; prerequisites = Subterra + Toterra.
 
 | p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
 | --- | --- | --- |
@@ -104,3 +105,4 @@
 * 2026-09-08 — 内容线初稿落盘：世界线（B 档 TFC 式彻底拟真）、交通体系线（十一面状态包 / 三语族 / 冰双模型 / 传送全面压制）、生物线（现实生物学三大支柱，性能优先）；TFC（EUPL-1.2）定为机制级 clean-room 参考。 / First content-line draft: world line (B, TFC-style full realism), transport line (eleven-facet state pack / three families / ice dual model / full teleport suppression), fauna line (real-biology pillars, performance-first); TFC (EUPL-1.2) adopted as mechanism-level clean-room reference.
 * 2026-09-08 — 世界观保留定案：物理层拟真重写、叙事/超自然层保留（下界与末地 / 魔法奥术 / 村民文明 / 上古遗迹四块）；传送压制口径修正为「压制≠移除」。 / Worldview retention decided: physical layer rewritten, narrative/supernatural layer retained (Nether & End / magic / villagers / ancient ruins); teleport-suppression wording fixed to "suppress ≠ remove".
 * 2026-09-08 — 世界观线定案（p.1.8–1.9）：三世界观 × 三线（主·现实 / 传奇 / 末影，正·中·反 + 特殊存在）；混合制声望（深度内容单选主立场）；贤者 = 隐藏据点 + 遗迹碑文；影响载体 = 事件联动 + 势力·维度扩张 + 真相任务链；新内容提案 10 项入 p.1.8。 / Cosmology line decided: three worldviews × three lines; hybrid reputation; sages via hidden strongholds + ruin inscriptions; influence via event links + dimension-bound faction expansion + truth quest chains; ten new-content proposals into p.1.8.
+* 2026-09-08 — 世界观开放扩展定案：注册契约内置于 Toterra（数据包纯 td / 模组 td+钩子），links 跨世界观链接全开放声明式。 / Worldview open-extension decided: registration contract lives in Toterra (datapack pure-td / mod td+hooks); cross-worldview links are fully open and declarative.
