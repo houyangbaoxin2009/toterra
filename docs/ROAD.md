@@ -11,11 +11,56 @@
 
 ## Plan / 规划
 
-* 待 jiro 规划细化。 / Planning pending jiro's input.
-* 规划未定时不虚构占位内容。 / No placeholder content is invented until the plan is set.
+三线内容于 2026-09-08 定稿（世界线 / 交通体系线 / 生物线），全部为 p 轨条目；实施顺序与子项细化随开发推进确认，未收敛的设计点明示「待细化」，不虚构占位。 / The three content lines were finalized on 2026-09-08 (world / transport / fauna); all are p-track items; order and sub-items are refined as development proceeds; unconverged designs stay marked "to be refined" and nothing is invented.
+
+### World Line / 世界线 — B 档 TFC 式彻底拟真
+
+* 经拍板：世界默认档为 B（完全替换），仿 TerraFirmaCraft 真实地理。TFC 为 EUPL-1.2（强 copyleft），定为机制级 clean-room 参考——玩法设计不受版权保护，实现与资产全部自研。 / User decision: default world tier is B (full replacement), modeled on TerraFirmaCraft's realistic geography. TFC is EUPL-1.2 (strong copyleft) — mechanism-level clean-room reference only; implementations and assets are all self-made.
+
+| p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
+| --- | --- | --- |
+| p.1.0 | Content-line skeleton / 内容线骨架：消费 Subterra worldgen API（SurfaceRules 装配点 / 预设备选）+ 结构护栏 + 矿物按维度分布前置注册 | designed / 已定 |
+| p.1.1 | Litho strata / 岩性地层：litho 维度换 StrataAlgo（区域分层 + 岩石类型组态，td 定义），首个「维度独立换算法」验证 | planned / 已立项 |
+| p.1.1 | Ore by parent rock / 矿石按母岩：mineral × {岩石类} 前置规则 + 矿脉走向，接结构护栏防重叠 | planned / 已立项 |
+| p.1.1 | Climate-driven vegetation / 气候驱动植被：climate → vegetation 接缝（温度 / 降雨 / 蒸散 → 植被带） | planned / 已立项 |
+| p.1.1 | World preset × realm link / 世界预设 × 专精联动：不同预设资源分布不同（供 p.1.9 专精系统消费） | planned / 已立项 |
+
+### Transport Line / 交通体系线
+
+* 思想：修路 = 探索循环的推进器（修路 → 移动强化 → 探索更远 → 区域命名 → 地图 → 新路）。 / Roads are an exploration-accelerator loop.
+* 三语族分工：硬路稳 / 冰场快 / 轨道重；重量与承重是交通语义的核心。 / Three families: stable hard roads, fast rinks, heavy rails; weight and load capacity are core.
+* 传送全面压制：鞘翅 / 末影珍珠 / 冰船收弱或移除，陆地交通成为第一价值。 / Teleport suppression makes land transport the primary value.
+
+| p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
+| --- | --- | --- |
+| p.1.2 | Motion facets / 状态面扩展：blocks.td 由三面（speed / friction / sticky）扩至十一面（+8：jump / fall_safety / turn / slip / inertia / states 触发表 / break_w 承重 / break_t 碎裂），向后兼容 + 探针 | planned / 已立项 |
+| p.1.3 | Hard roads / 硬路语族：土径 → 砂砾 → 石板 → 夯道分档（系数表 td），路网识别（连续方块识别 + 路网等级） | planned / 已立项 |
+| p.1.4 | Ice dual model / 冰双模型：裸冰（变慢·变滑·惯性难停·承重碎裂·特殊状态 stumble/slide）vs 滑冰场（冰下保温层方块改写运动面 → 高速可控），不同冰种系数 / 承重 / 滞时不同 | planned / 已立项 |
+| p.1.5 | Rails / 轨道语族：矿车重制（木 / 石砟 / 铁轨 + 坡度限制 + 下坡蓄力 + 货运车斗），重货干线定位 | planned / 已立项 |
+| p.1.6 | Realm link / 专精联动：筑路 / 冰运 / 铁路三方向深度解锁（供 p.1.9 消费） | planned / 已立项 |
+
+### Fauna Line / 生物线 — 现实生物学，性能优先
+
+* 三大支柱：生理（体重 / 体质 traits + home terrain mastery）、生态（食物链 + 季节行为 + 社群 / 领地）、行为（驯化三维度 + 智力分级）。 / Three pillars: physiology, ecology, behavior.
+* 性能纪律（拍板优先项）：AI 分级预算桶（反射 / 回避 / 计划）；分区空间索引杜绝每 tick 全局扫描 O(n²)；亚种 traits 由区域种子哈希确定性派生（零运行时遗传算法）；spawn 密度锚定复用 Subterra 激活范围优化；季节用全局调度器而非逐实体时钟。 / Performance is a hard prerequisite (see rows).
+
+| p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
+| --- | --- | --- |
+| p.1.7 | Physiology / 生理层：体重（消费重量体系）+ traits（运动 facets 扩展为体质包 + home terrain mastery，确定性派生） | planned / 已立项 |
+| p.1.7 | Ecology / 生态层：食物链 + 捕食密度平衡 + 季节行为（迁徙 / 换毛 / 冬眠 / 繁殖季），fauna 维度算法第一实装 | planned / 已立项 |
+| p.1.7 | Behavior / 行为层：驯化三维度（幼年印记 / 食物贿赂 / 信任积累）+ 智力分级（预算分级） | planned / 已立项 |
+| p.1.7 | Variance / 变种：区域种子确定性亚种（毛色 / 体型 / 习性）+ 罕见物种与迁徙走廊作探索目标 | planned / 已立项 |
+
+### Realm Line / 专精系统（灵魂玩法，待细化）
+
+* 玩家只能精通少数领域；筑路 / 冰运 / 铁路 / 博物·驯养等领域的深度解锁联动世界、交通、生物三线；设计未定时不填充细节。 / Mastery of few realms; realm unlocks tie the three lines together; details pending.
 
 ## Discipline / 纪律
 
 * 小任务逐个提交：每完成一个小任务即报告并提交一次，得确认后再做下一个。 / Small tasks are submitted one at a time; each is reported and committed before the next starts.
 * 所有子任务完成后统一 review + 清理 + 推送。 / After all sub-tasks complete: one review, cleanup, and push.
 * 验收确定性优先（服务端开服、客户端进世界、断言全 PASS）。 / Acceptance is determinism-first (server boots / client enters world / assertions PASS).
+
+## Progress Log / 进度记录
+
+* 2026-09-08 — 内容线初稿落盘：世界线（B 档 TFC 式彻底拟真）、交通体系线（十一面状态包 / 三语族 / 冰双模型 / 传送全面压制）、生物线（现实生物学三大支柱，性能优先）；TFC（EUPL-1.2）定为机制级 clean-room 参考。 / First content-line draft: world line (B, TFC-style full realism), transport line (eleven-facet state pack / three families / ice dual model / full teleport suppression), fauna line (real-biology pillars, performance-first); TFC (EUPL-1.2) adopted as mechanism-level clean-room reference.
