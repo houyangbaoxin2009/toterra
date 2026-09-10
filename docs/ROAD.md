@@ -116,6 +116,25 @@
 * 配置量级 O(分类×方块)+O(物种覆盖)，取代 O(物种×方块)；方块系数表即 blocks.td per-mob 的抽象层（fauna_class 模板 + mobs overrides）。 / Config cost drops from O(species×block) to O(class×block)+O(overrides); the factor table is the per-mob abstraction of blocks.td.
 * 咬合：破冰阈值走 break_w（重型/有蹄易裂，轻/蹼稳）、滑倒概率走 slip（与冰双模型闭环）；亚种 traits 仅在类窗口内浮动（生理边界决定变种天花板）；加载期预计算 `分类×方块材质→系数` 常表，零运行时推导。 / Interlocks: ice break via break_w, stumble via slip; variant traits float only within class bounds; load-time precomputed constant table for O(1) lookup.
 
+### Thoughts System / 思绪系统（独立横切小节，p.2.5 轨，2026-09-10 定）
+
+* 定位：**思绪 ≠ 任务**——无目标、无进度、无奖励、无失败。思绪只收纳与引导：世界给出线索，玩家以实物手记整理思绪、罗列线索、找到关联，世界以人情回应、绝不以弹窗回应。 / Thoughts never force; they collect, organize, and guide. The world gives clues; the player sorts them in a physical journal; the world answers in its own language.
+* 横切六条内容线：世界观线线索双通道 / 隐型技术线遗物知识 / 领域线笔记 / 交通·博物见闻，统一汇入同一本手记；**全知识收纳**（线索、碑文摘录、遗物观察、贤者话语、领域笔记、玩家自写待办）。 / Cross-cutting all six content lines; all-knowledge collection.
+* 载体 = 实物「手记」物品：翻页纸面、墨迹、书签，无按钮/进度条/图标；六类页（线索 / 碑文抄录 / 遗物观察 / 贤者话语 / 领域笔记 / 待办）；抄录消耗纸张与墨水（墨水瓶为消耗品，无系统计数）。 / The journal is a physical item: world-language paper, six page kinds, transcription costs paper & ink.
+* 关联机制三者皆有：**自动归拢**（同遗迹/同来源物/共享关键短语的条目经确定性规则落入同卷，手记自我编排）；**玩家主动拼合**（选中条目比对，正确则涌出感想写入，错误则自行划掉重试）；**世界反馈**（关联正确时贤者态度微变、NPC 话头改动、遗物铭文呼应，全走零 HUD 表面映射，绝无弹窗）。 / Three connection mechanics together: automatic affinity grouping, player-driven matching, world feedback (all via zero-HUD surface mapping).
+* 玩家待办：自写条目，完成时**亲手划掉**，不自动清除、无提醒、无到期；不触发系统事件。 / To-dos are self-written and crossed out by hand.
+* 分仓：Subterra `engine.thought`（纯 JDK：条目/手记模型 + td schema + 确定性关联规则引擎 + td/zd 序列化 + ThoughtProbe）经 subterra-api 消费；Toterra 售手记物品、页呈现与世界反馈接线，服从铁律依赖方向。 / Subterra `engine.thought` (pure JDK) consumed via subterra-api; Toterra owns the item, rendering, and world-feedback wiring.
+* 设计文档：`docs/2026-09-10-thoughts-system-design.md`（全系列 docs 目录）。 / Design doc: `docs/2026-09-10-thoughts-system-design.md`.
+
+| p-track / p 轨 | Milestone / 里程碑 | Status / 状态 |
+| --- | --- | --- |
+| p.2.5.1 | `engine.thought` entry/journal model + td schema + API (Subterra, pure JDK) / 条目/手记模型 + td schema + API（Subterra 纯 JDK） | planned / 已立项 |
+| p.2.5.2 | Deterministic connection rule engine (auto grouping + player match) + probe / 确定性关联规则引擎（自动归拢 + 玩家拼合判定）+ 探针 | planned / 已立项 |
+| p.2.5.3 | Journal item, page-flip & transcription interaction (Toterra) / 手记物品、翻页与抄录交互（Toterra） | planned / 已立项 |
+| p.2.5.4 | World-language page rendering (layout + zero-HUD guard) / 世界语言页面呈现（页排版 + 零 HUD 守卫） | planned / 已立项 |
+| p.2.5.5 | Player to-do writing & crossing out / 玩家待办书写与划掉 | planned / 已立项 |
+| p.2.5.6 | World-feedback wiring (sage / NPC / artifact echo) + wrap-up / 世界反馈接线（贤者 / NPC / 遗物呼应）+ 收尾 | planned / 已立项 |
+
 ### Realm Line / 领域专精（灵魂玩法，p.2 轨起）
 
 * 总原则（2026-09-08 定，**否决点数稀缺制**）：**自由优先**——MC 的灵魂是自由，不给玩家设固定框架与领域点硬上限。玩家可精通**全领域**，只是**极难达成**；「只能精通少数」是涌现结果而非规则。 / Overriding principle: freedom first — no realm-point caps or fixed fences; mastering all realms is possible but very demanding; "few realms in practice" emerges from depth, not rules.
@@ -229,6 +248,7 @@
 
 ## Progress Log / 进度记录
 
+* 2026-09-10 — 思绪系统定案（p.2.5 独立横切小节）：思绪 ≠ 任务（无目标/进度/奖励/失败）；实物手记载体 + 六类页 + 抄录消耗纸墨；关联三者皆有（自动归拢 / 玩家主动拼合 / 世界反馈走零 HUD）；玩家自写待办亲手划掉；全知识收纳；分仓 Subterra `engine.thought`（纯 JDK + 确定性探针）与 Toterra 手记；td 定型配置 + td/zd 持久化，藏录互操作；设计文档 `docs/2026-09-10-thoughts-system-design.md`。 / Thoughts system decided (p.2.5 standalone cross-cutting section): thoughts ≠ quests; a world-borne journal item with six page kinds; three connection mechanics (affinity grouping / player matching / world feedback via zero-HUD); hand-crossed to-dos; all-knowledge collection; Subterra `engine.thought` (pure JDK + deterministic probe) + Toterra journal split; td-shaped config + td/zd persistence; Ledger interop; design doc `docs/2026-09-10-thoughts-system-design.md`.
 * 2026-09-08 — 内容线初稿落盘：世界线（B 档 TFC 式彻底拟真）、交通体系线（十一面状态包 / 三语族 / 冰双模型 / 传送全面压制）、生物线（现实生物学三大支柱，性能优先）；TFC（EUPL-1.2）定为机制级 clean-room 参考。 / First content-line draft: world line (B, TFC-style full realism), transport line (eleven-facet state pack / three families / ice dual model / full teleport suppression), fauna line (real-biology pillars, performance-first); TFC (EUPL-1.2) adopted as mechanism-level clean-room reference.
 * 2026-09-08 — 世界观保留定案：物理层拟真重写、叙事/超自然层保留（下界与末地 / 魔法奥术 / 村民文明 / 上古遗迹四块）；传送压制口径修正为「压制≠移除」。 / Worldview retention decided: physical layer rewritten, narrative/supernatural layer retained (Nether & End / magic / villagers / ancient ruins); teleport-suppression wording fixed to "suppress ≠ remove".
 * 2026-09-08 — 世界观线定案（p.1.8–1.9）：三世界观 × 三线（主·现实 / 传奇 / 末影，正·中·反 + 特殊存在）；混合制声望（深度内容单选主立场）；贤者 = 隐藏据点 + 遗迹碑文；影响载体 = 事件联动 + 势力·维度扩张 + 真相任务链；新内容提案 10 项入 p.1.8。 / Cosmology line decided: three worldviews × three lines; hybrid reputation; sages via hidden strongholds + ruin inscriptions; influence via event links + dimension-bound faction expansion + truth quest chains; ten new-content proposals into p.1.8.
