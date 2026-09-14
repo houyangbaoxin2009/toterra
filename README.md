@@ -11,7 +11,8 @@ A Minecraft mod (open source, TPL 2.0) that brings a hyper-realistic, all-domain
 
 ## 状态 Status
 
-* 愿景与命名已对齐（Toterra / 万象之土），六条设计线定稿
+* 愿景与命名已对齐（Toterra / 万象之土），六条设计线定稿。
+* **远期目标**：设计保留，近期不排实施期；世界线同域内容由先行模组 Overturn 先导验证（详见聚合仓 `docs/2026-09-15-overturn-mod-design.md`）。/ Long-term goal: designs kept, no near-term cycle; the world-line domain is first pioneered by Overturn.
 * 路线图：`docs/ROAD.md`（bilingual）
 
 ## License / 许可
